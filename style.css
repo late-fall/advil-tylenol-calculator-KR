@@ -1,0 +1,156 @@
+.advil, .tylenol {
+    display: none;
+}
+
+#advil-wt, #tylenol-wt {
+    display: none;
+}
+
+body{
+    color: black;
+    display: flex;
+    justify-content: center;
+    background: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    background-color: #5cbdb9;
+    margin-top: 100px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+.med-title, .wt-title{
+  display: none;  
+}
+
+input[name="age"], input[name="med"]{
+    display: none;
+}
+
+input[name="age"]:checked + label > .box{
+    background-color: #cdf8f5;
+    transform: translateY(4px);
+    box-shadow: none;
+    border: 2px solid black;
+}
+
+input[name="med"]:checked + label > .tylenol-box{
+    background-color: #aa0f0f;
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+input[name="med"]:checked + label > .advil-box{
+    background-color: rgba(8, 24, 117);
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+
+input[name="med"]:hover + label > .tylenol-box{
+    background-color: #aa0f0f;
+}
+
+input[name="med"]:hover + label > .advil-box{
+    background-color: rgba(8, 24, 117);
+}
+
+
+.age, .medication{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    grid-gap: 15px;
+}
+
+.box{
+    background-color: #ebf6f5;
+    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 55px;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    padding: 5px 10px;
+}
+
+.tylenol-box{
+    background-color: rgba(170, 15, 15, 0.7);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px #666;
+}
+
+.advil-box{
+    background-color: rgb(8, 24, 117, 0.7);
+    color: yellow;
+    border-radius: 15px;
+    box-shadow: 0 5px #666;
+}
+
+select {
+    margin: 0 auto;
+    background-color: #59c9c5;
+    color: white;
+    padding: 12px;
+    min-width: 250px;
+    border: none;
+    font-size: 1.3rem;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    text-align: center;
+}
+
+.result{
+    font-size: 1.5rem;
+}
+
+button{
+    max-width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fbe3e8;
+    cursor: pointer;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+button:hover {
+    background-color: #ffcdd8;
+}
+
+button:active {
+    background-color: #ffcdd8;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.result{
+    max-width: 350px;
+    display: grid;
+    text-align: center;
+    place-items: center;
+}
+
+img{
+    max-width: 100%;
+    display: none;
+}

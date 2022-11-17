@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>아이 해열제 복용량 계산기</title>
+</head>
+<body>
+    <div class="container">
+        <h1>아이 해열제 복용량 계산기</h1>
+        <h2>연령</h2>
+        <div class="age">
+            <div class="under3">
+                <input type="radio" id="under3" name="age" value="under3">
+                <label for="under3">
+                    <div class="under3-box box">
+                        3개월 이하
+                    </div>
+                </label>
+            </div>
+            <div class="under6">
+                <input type="radio" id="under6" name="age" value="under6">
+                <label for="under6">
+                    <div class="under6-box box">
+                        3개월 ~ 6개월 사이
+                    </div>
+                </label>
+            </div>
+            <div class="over6">
+                <input type="radio" id="over6" name="age" value="over6">
+                <label for="over6">
+                    <div class="over6-box box">
+                        6개월 이상
+                    </div>
+                </label>
+            </div>
+        </div>
+        <h2 class="med-title">해열제 종류</h2>
+        <div class="medication">
+            <div class="tylenol">
+                <input type="radio" id="tylenol" name="med" value="tylenol">
+                <label for="tylenol">
+                    <div class="tylenol-box box">
+                        타이레놀(Acetaminophen)
+                    </div>
+                </label>
+            </div>
+            <div class="advil">
+                <input type="radio" id="advil" name="med" value="advil">
+                <label for="advil">
+                    <div class="advil-box box">
+                        애드빌(Ibuprofen)
+                    </div>
+                </label>
+            </div>
+        </div>
+        <h2 class="wt-title">체중</h2>
+        <select id="tylenol-wt">
+            <option value="none">---- 체중선택 ----</option>
+            <option value="11">11 - 15.9 kg / 24 - 34 lbs</option>
+            <option value="16">16 - 21.9 kg / 35 - 47 lbs</option>
+            <option value="22">22 - 32.9 kg / 48 - 72 lbs</option>
+            <option value="33">33 - 45 kg / 73 - 99 lbs</option>
+            <option value="45">45 kg / 99 lbs 이상</option>
+        </select>
+        <select id="advil-wt">
+            <option value="none">---- 체중선택 ----</option>
+            <option value="10">10 - 19.9 kg / 22 - 43 lbs</option>
+            <option value="20">20 - 29.9 kg / 44 - 65 lbs</option>
+            <option value="30">30 - 40 kg / 66 - 88 lbs</option>
+            <option value="40">40 kg / 88 lbs 이상</option>
+        </select>
+        
+        <div class="result">
+            <p id = "result"></p>
+            <img src="img/sample.PNG" alt="tablets examples" />
+        </div>
+        <button type="button">다시 계산하기</button>
+    </div>
+</body>
+</html>
