@@ -20,13 +20,13 @@ body{
     justify-content: center;
     place-items: center;
     background-color: #5cbdb9;
-    margin-top: 100px;
     padding: 30px;
     border-radius: 10px;
 }
 
 h1{
     text-align: center;
+    font-size: 2.3rem;
 }
 
 .med-title, .wt-title{
