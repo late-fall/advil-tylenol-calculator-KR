@@ -100,7 +100,7 @@ function calc(){
         }
         else {
             document.querySelector('#result').innerHTML = "일반 타이레놀 " + tablet + 
-            " tablet (" + mg + "mg) " + "을 4시간마다 주세요(하루 최대 5알)."
+            " tablet (" + mg + "mg) " + "을 4시간마다 주세요(하루 최대 5번)."
         }
     }
 
