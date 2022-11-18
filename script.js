@@ -176,3 +176,8 @@ document.querySelector("button").addEventListener('click', function(){
 })
 
 //learning point - try to use reset as function? 
+
+//disable right click
+window.addEventListener('contextmenu', function (e) { 
+    e.preventDefault(); 
+  }, false);
